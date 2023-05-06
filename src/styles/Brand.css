@@ -1,0 +1,27 @@
+.brand-container {
+  background-color: #e3e1f1;
+  padding: clamp(8px,4%,40px);
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin: 20px auto;
+  /* display: flex; */
+  justify-content: space-evenly;
+  align-items: center;
+  color: #000;
+}
+
+.brand-container>div>button {
+  background: #1e1e1e;
+  width: 150px;
+  padding: 12px;
+  box-shadow: 0px 10px 40px -12px rgba(30, 30, 30, 0.35);
+  font-size: clamp(16px,25%,24px);
+  border-radius: 8px;
+  color: #ffffff;
+  border: none;
+}
+
+.brand-container>div>button:hover{
+  background: #faca10;
+  opacity: 0.8;
+}

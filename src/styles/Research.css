@@ -1,0 +1,48 @@
+.research-container{
+    background-color: #e3e1f1;
+    padding: clamp(8px,4%,40px);
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin: 20px auto;
+    color: #000;
+    margin-bottom: 40px;
+}
+.research-top>p {
+  max-width: 864px;
+  width: 80%;
+  margin: 10px auto;
+}
+
+.research-top > h3 {
+  font-weight: 900;
+  font-size: clamp(24px,25%,44px);
+  line-height: 133.4%;
+  /* identical to box height, or 59px */
+
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #1e1e1e;
+}
+
+.research-bottom{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+.research-bottom>div>button {
+  background: #1e1e1e;
+  width: 150px;
+  padding: 12px;
+  box-shadow: 0px 10px 40px -12px rgba(30, 30, 30, 0.35);
+  font-size: clamp(16px,25%,24px);
+  border-radius: 8px;
+  color: #ffffff;
+  border: none;
+}
+
+.research-bottom>div>button:hover{
+  background: #faca10;
+  opacity: 0.8;
+}

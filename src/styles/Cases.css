@@ -1,0 +1,83 @@
+.cases-container {
+  background-color: #e3e1f1;
+  padding: clamp(8px,4%,40px);
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin: 20px auto;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: clamp(24px,25%,44px);
+  line-height: 133.4%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-bottom: 30px;
+
+  color: #1e1e1e;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  box-sizing: border-box;
+  /* max-width: clamp(270px,25%,340px);
+  width: 100%; */
+  padding: clamp(8px,25%,20px);
+  background: #ffffff;
+  border: 1px solid rgba(250, 202, 16, 0.4);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.14);
+  border-radius: clamp(8px,25%,15px);
+}
+
+.card-img {
+  filter: drop-shadow(0px 7px 17px rgba(0, 0, 0, 0.09));
+  border-radius: clamp(8px,25%,15px);
+}
+
+.card-title {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(14px,25%,25px);
+  line-height: clamp(20px,25%,33px);
+
+  color: #1e1e1e;
+}
+
+.card-text {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(12px,25%,17px);
+  line-height: 176%;
+
+  letter-spacing: 0.02em;
+
+  color: #1e1e1e;
+}
+
+.card-btn {
+  width: 50%;
+  padding: 8px;
+  margin: 0 25%;
+  background: #1e1e1e;
+  box-shadow: 0px 10px 40px -12px rgba(30, 30, 30, 0.35);
+  font-size: clamp(14px,25%,24px);
+  border-radius: 8px;
+  color: #ffffff;
+  border: none;
+}
+
+.card-btn:hover {
+  background: #faca10;
+  opacity: 0.8;
+}
+.card:hover {
+  transform: scale(1.05);
+}

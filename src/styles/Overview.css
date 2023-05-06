@@ -1,0 +1,32 @@
+.overview {    
+  max-width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap:20px;
+  color: #000;
+}
+.overview-img{
+  width: 100%;
+}
+.overview-img > img{
+    max-width: 700px;
+    width: 100%;
+}
+
+.overview-btn{
+  width: 150px;
+  padding: 12px;
+  /* margin: 0 25%; */
+  background: #FACA10;
+  box-shadow: 0px 10px 40px -12px rgba(30, 30, 30, 0.35);
+  font-size: clamp(16px,25%,24px);
+  border-radius: 8px;
+  color: #ffffff;
+  border: none;
+}
+
+.overview-btn:hover{
+  transform: scale(1.02);
+  opacity: .8;
+}

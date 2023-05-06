@@ -1,0 +1,10 @@
+.reason-container{
+    color: black;
+}
+.reason-container>h3{
+    text-align: center;
+}
+.reason-container>p{
+    max-width: 600px;
+    margin: 10px auto;
+}

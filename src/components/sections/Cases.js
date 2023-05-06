@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import case1 from "../../assest/case1.png";
 import case2 from "../../assest/case2.png";
 import case3 from "../../assest/case3.png";
@@ -42,6 +43,8 @@ const cardData = [
 ];
 
 const Cases = () => {
+  let user = JSON.parse(localStorage.getItem("userDetails"));
+  const navigate = useNavigate();
   return (
     <section className="cases-container">
       <h2>Our Cases</h2>
@@ -65,7 +68,12 @@ const Cases = () => {
               <div className="card-title">{data.title}</div>
               <p className="card-text">{data.text}</p>
               <div>
-                <button className="card-btn">Know More</button>
+                <button
+                  onClick={() => !user && navigate("/signin")}
+                  className="card-btn"
+                >
+                  Know More
+                </button>
               </div>
             </Box>
           );

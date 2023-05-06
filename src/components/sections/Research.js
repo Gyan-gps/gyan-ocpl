@@ -1,8 +1,11 @@
+import { useNavigate } from "react-router-dom";
 import research from "../../assest/research.png";
 import "../../styles/Research.css";
 import { Box } from "@mui/material";
 
 const Research = () => {
+  let user = JSON.parse(localStorage.getItem("userDetails"));
+  const navigate = useNavigate();
   return (
     <section>
       <div className="research-container">
@@ -30,7 +33,9 @@ const Research = () => {
               typesetting industry. Lorem Ipsum has been the industry's standard
               dummy text ever since the 1500s, when an unknown printer took.
             </p>
-            <button>Know More</button>
+            <button onClick={() => !user && navigate("/signin")}>
+              Know More
+            </button>
           </div>
           <div>
             <img src={research} alt="research" width="300" loading="lazy" />

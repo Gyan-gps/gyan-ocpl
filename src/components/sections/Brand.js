@@ -1,8 +1,11 @@
+import { useNavigate } from "react-router-dom";
 import brond from "../../assest/brond.png";
 import "../../styles/Brand.css";
 import { Box } from "@mui/material";
 
 const Brond = () => {
+  let user = JSON.parse(localStorage.getItem("userDetails"));
+  const navigate = useNavigate();
   return (
     <section>
       <Box
@@ -24,7 +27,9 @@ const Brond = () => {
             industry. Lorem Ipsum has been the industry standard dummy text ever
             since the 1500s, when an unknown printer took a galley of type
           </p>
-          <button>Know More</button>
+          <button onClick={() => !user && navigate("/signin")}>
+            Know More
+          </button>
         </Box>
       </Box>
     </section>

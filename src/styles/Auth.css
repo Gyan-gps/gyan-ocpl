@@ -18,6 +18,7 @@ form > div{
   align-items: center;
 }
 
+
 label{
   font-size: 24px;
 }
@@ -26,11 +27,13 @@ label{
   color: white;
   background-color: red;
   border-radius: 5px;
-  min-width: 150px;
+  max-width: 300px;
+  width: 90%;
   font-size: larger;
   display: block;
-  padding: 15px;
+  padding: 10px;
   margin: 10px auto;
+  border-radius: 12px;
 }
 
 .wtup {
@@ -40,17 +43,18 @@ label{
 .wtup div,
 input {
   border-radius: 12px;
-  font-size: 24px;
   font-family: Helvetica, sans-serif;
   font-weight: 800;
 }
 
 input {
   outline: none;
-  padding: 20px;
-  padding-right: 70px;
+  padding: 10px 20px;
   border: 2px solid #333;
-  width: 300px;
+  max-width: 400px;
+  font-size: 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 input:focus {

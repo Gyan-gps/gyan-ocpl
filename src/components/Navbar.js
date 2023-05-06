@@ -6,7 +6,7 @@ function Navbar() {
   let user = JSON.parse(localStorage.getItem("userDetails"));
   const navigate = useNavigate();
   return (
-    <Box position="sticky" top={0} sx={{ zIndex: "10" }}>
+    <Box position="sticky" top={0} sx={{ zIndex: "10", background: "black" }}>
       <Box
         sx={{
           flexGrow: 1,
@@ -25,7 +25,7 @@ function Navbar() {
           />
         </Typography>
         {user ? (
-          <Typography>{user.name}</Typography>
+          <Typography>{user.email}</Typography>
         ) : (
           <Typography
             sx={{ cursor: "pointer" }}

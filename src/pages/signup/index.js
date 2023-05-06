@@ -21,15 +21,17 @@ const Signup = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (userDetails.email === "" || userDetails.password === "") {
+      alert("Missing credentials")
     } else {
       console.log(userDetails);
       axios
-        .post("http://91.203.132.6/login", userDetails)
+        .post("http://91.203.132.6/register", userDetails)
         .then((res) => {
           console.log(res);
         })
         .catch((err) => {
           console.log(err);
+          alert(err);
         });
     }
   };
